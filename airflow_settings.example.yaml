@@ -1,0 +1,13 @@
+airflow:
+  connections:
+    - conn_id: snowflake_conn
+      conn_type: snowflake
+      conn_login: <your_snowflake_username>
+      conn_schema: dbt_schema
+      conn_extra:
+        account: <account_identifier>
+        warehouse: dbt_wh
+        database: dbt_db
+        role: dbt_role
+        private_key_file: /usr/local/airflow/keys/snowflake_rsa_key.p8
+        private_key_file_pwd: <passphrase>

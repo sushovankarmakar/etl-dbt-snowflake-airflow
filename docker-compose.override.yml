@@ -1,0 +1,10 @@
+services:
+  scheduler:
+    volumes:
+      - ./keys:/usr/local/airflow/keys:ro
+  dag-processor:
+    volumes:
+      - ./keys:/usr/local/airflow/keys:ro
+  triggerer:
+    volumes:
+      - ./keys:/usr/local/airflow/keys:ro

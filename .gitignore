@@ -1,0 +1,37 @@
+# Environment & Secrets
+.env
+*.env
+airflow_settings.yaml
+
+# Keys and Certificates
+keys/
+*.p8
+*.pub
+*.pem
+*.key
+
+# Astro CLI & Airflow internals
+.astro/
+astro
+airflow-webserver.pid
+webserver_config.py
+airflow.cfg
+airflow.db
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+venv/
+
+# dbt Artifacts & Packages
+**/target/
+**/dbt_packages/
+**/logs/
+**/.astro/dbt_metadata.json
+**/.astro/manifest.slim.json
+
+# OS files
+.DS_Store
+Thumbs.db
